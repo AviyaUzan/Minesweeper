@@ -157,18 +157,21 @@ background-blend-mode:
 
 table{
     margin: auto;
-    margin-top: 140px;
+    margin-top: 170px;
+	border: 5px dotted black;
+	
 }
 
 .timer{
     text-align: center;
     block-size: 200px;
+	
 }
 
 .h2{
-    text-align: center; 
-    margin-left: 50px;
-}
+	margin: remove;
+} 
+
 
 p{
     font-size: xx-large;
@@ -192,3 +195,4 @@ p{
     font-weight: 600;
     /* bottom: -200px; */
 }
+
