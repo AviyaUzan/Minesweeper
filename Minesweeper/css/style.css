@@ -1,0 +1,198 @@
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:
+	radial-gradient(
+		circle at left,
+		transparent,
+		#99eb47,
+		#99eb47 3.36927%,
+		transparent 3.36927%,
+		transparent 6.73854%,
+		#b3e87d 6.73854%,
+		#b3e87d 10.10782%,
+		transparent 10.10782%,
+		transparent 13.47709%,
+		#ccebad 13.47709%,
+		#ccebad 16.84636%,
+		transparent 16.84636%,
+		transparent 20.21563%,
+		#a6ed5e 20.21563%,
+		#a6ed5e 23.58491%,
+		transparent 23.58491%,
+		transparent 26.95418%,
+		#ccebad 26.95418%,
+		#ccebad 30.32345%,
+		transparent 30.32345%,
+		transparent 33.69272%,
+		#b3e87d 33.69272%,
+		#b3e87d 37.06199%,
+		transparent 37.06199%,
+		transparent 40.43127%,
+		#99eb47 40.43127%,
+		#99eb47 43.80054%,
+		transparent 43.80054%,
+		transparent 47.16981%
+	),
+	radial-gradient(
+		circle at right,
+		transparent,
+		#99eb47 0%,
+		#99eb47 3.36927%,
+		transparent 3.36927%,
+		transparent 6.73854%,
+		#b3e87d 6.73854%,
+		#b3e87d 10.10782%,
+		transparent 10.10782%,
+		transparent 13.47709%,
+		#ccebad 13.47709%,
+		#ccebad 16.84636%,
+		transparent 16.84636%,
+		transparent 20.21563%,
+		#a6ed5e 20.21563%,
+		#a6ed5e 23.58491%,
+		transparent 23.58491%,
+		transparent 26.95418%,
+		#ccebad 26.95418%,
+		#ccebad 30.32345%,
+		transparent 30.32345%,
+		transparent 33.69272%,
+		#b3e87d 33.69272%,
+		#b3e87d 37.06199%,
+		transparent 37.06199%,
+		transparent 40.43127%,
+		#99eb47 40.43127%,
+		#99eb47 43.80054%,
+		transparent 43.80054%,
+		transparent 47.16981%
+	),
+	radial-gradient(circle at left,
+		transparent,
+		#99eb47 0%,
+		#99eb47 3.36927%,
+		transparent 3.36927%,
+		transparent 6.73854%,
+		#b3e87d 6.73854%,
+		#b3e87d 10.10782%,
+		transparent 10.10782%,
+		transparent 13.47709%,
+		#ccebad 13.47709%,
+		#ccebad 16.84636%,
+		transparent 16.84636%,
+		transparent 20.21563%,
+		#a6ed5e 20.21563%,
+		#a6ed5e 23.58491%,
+		transparent 23.58491%,
+		transparent 26.95418%,
+		#ccebad 26.95418%,
+		#ccebad 30.32345%,
+		transparent 30.32345%,
+		transparent 33.69272%,
+		#b3e87d 33.69272%,
+		#b3e87d 37.06199%,
+		transparent 37.06199%,
+		transparent 40.43127%,
+		#99eb47 40.43127%,
+		#99eb47 43.80054%,
+		transparent 43.80054%,
+		transparent 47.16981%
+	),
+	radial-gradient(circle at right,
+		transparent,
+		#56dee7 0%,
+		#47d8eb 3.36927%,
+		transparent 3.36927%,
+		transparent 6.73854%,
+		#7de1e8 6.73854%,
+		#7de8e8 10.10782%,
+		transparent 10.10782%,
+		transparent 13.47709%,
+		#6fd3e0 13.47709%,
+		#ade4eb 16.84636%,
+		transparent 16.84636%,
+		transparent 20.21563%,
+		#5eb4ed 20.21563%,
+		#5eede1 23.58491%,
+		transparent 23.58491%,
+		transparent 26.95418%,
+		#ccebad 26.95418%,
+		#ccebad 30.32345%,
+		transparent 30.32345%,
+		transparent 33.69272%,
+		#b3e87d 33.69272%,
+		#b3e87d 37.06199%,
+		transparent 37.06199%,
+		transparent 40.43127%,
+		#99eb47 40.43127%,
+		#5debf0 43.80054%,
+		transparent 43.80054%,
+		transparent 47.16981%
+	), #52d6e0;
+
+background-size: 4em 4em;
+background-position:
+	0 0,
+	0 2em,
+	2em 0,
+	2em 2em;
+background-blend-mode:
+	overlay,
+	overlay,
+	normal,
+	normal;
+
+}
+
+.cell{
+ height: 30px;
+ width: 30px;  
+ background-color: rgb(182, 181, 181);
+ text-align: center;
+ border: 5px solid black;
+} 
+
+.hidden{
+    background-color: rgb(116, 157, 196)
+}
+
+table{
+    margin: auto;
+    margin-top: 170px;
+	border: 5px dotted black;
+	
+}
+
+.timer{
+    text-align: center;
+    block-size: 200px;
+	
+}
+
+.h2{
+	margin: remove;
+} 
+
+
+p{
+    font-size: xx-large;
+}
+
+.btn{
+    margin: 5px;
+    box-shadow: rgb(63, 152, 236) -2px -2px 0px 2px,
+        rgb(84, 246, 184) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    /* bottom: -200px; */
+}
+
