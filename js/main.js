@@ -137,14 +137,16 @@ function cellclicked(elCell) {
 
     if (gGame.isOn === false) return;
 
-    if (gGame.lives === 0) {
-        gameOver();
-    }
+    // if (gGame.lives === 0) {
+    //     gameOver();
+    // }
 
     var cellCoord = getCellCoord(elCell.id);
     // console.log('cellCoord',cellCoord)
 
     var cell = gBoard[cellCoord.i][cellCoord.j];
+
+    if(cell.isMarked) return
     // console.log('cell',cell)
 
     elCell.classList.remove('hidden');
@@ -171,12 +173,36 @@ function cellclicked(elCell) {
     }
 
     gGame.isFirstclick = true;
-
+    debugger
     isVictory();
 
     if (gGame.lives === 0) {
+        // showMines()
         gameOver();
     }
+}
+
+function showMines() { 
+ 
+    // NEED TO LOOK AGAIN
+
+    // if(cell.isMine){
+        //     elCell.classList.remove('hidden')
+        // }
+
+        // tdId = `cell-${i}-${j}`
+
+    for(var i = 0 ; i < gBoard.length ; i++){
+        for(var j = 0 ; j < gBoard.length ; j++){
+          var cellCoord = getCellCoord(elCell.id)
+          var elCell = gBoard[cellCoord.i][cellCoord.j]
+              var cell = gBoard[i][j]
+              if(cell.isMine){
+                //   cell.isShown = true
+                  elCell.classList.remove('hidden')
+              }
+      }
+  }
 }
 
 function updateTime() {
@@ -189,7 +215,13 @@ function updateTime() {
     elh1.innerText = fixedTime;
 }
 
+// ADD you cannot reveal a flagged cell = done
+// ADD you cannot click on it if game over = done
+// ADD ?
+
+
 function cellMarked(elCell, event) {
+    if(!gGame.isOn) return
     event.preventDefault();
 
     // if (!gGame.isOn) return;
@@ -229,6 +261,8 @@ function changeSize(size, mines, flags) {
 function gameOver() {
     var elBtnSmiley = document.querySelector('.smiley');
     elBtnSmiley.innerText = SAD_SMILEY;
+
+
 
     gGame.isOn = false;
     clearInterval(gTimerInt);
@@ -282,6 +316,7 @@ function isVictory() {
         var elBtnSmiley = document.querySelector('.smiley');
         elBtnSmiley.innerText = WINNER;
         clearInterval(gTimerInt);
+        gGame.isOn = false
         return true;
     } else {
         return false;
